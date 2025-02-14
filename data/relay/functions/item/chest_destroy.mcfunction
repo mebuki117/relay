@@ -1,0 +1,1 @@
+execute as @s at @s run fill ~ 253 ~ ~ 254 ~ minecraft:air destroy
