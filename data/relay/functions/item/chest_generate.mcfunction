@@ -169,8 +169,3 @@ execute as @s at @s run data modify block ~ 254 ~ Items[10] set from storage rel
 execute as @s at @s run data modify block ~ 254 ~ Items[11] set from storage relay_temp:inventory item38
 execute as @s at @s run data modify block ~ 254 ~ Items[12] set from storage relay_temp:inventory item39
 execute as @s at @s run data modify block ~ 254 ~ Items[13] set from storage relay_temp:inventory item40
-
-
-
-
-# data get storage relay_temp:inventory

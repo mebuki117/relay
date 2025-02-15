@@ -1,1 +1,1 @@
-execute as @a run tellraw @s {"text":"[Relay][Info] Switch after 10 seconds"}
+# execute as @a run tellraw @s {"text":"[Relay][Info] Switch after 10 seconds"}
