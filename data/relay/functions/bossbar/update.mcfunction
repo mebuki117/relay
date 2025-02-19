@@ -1,3 +1,9 @@
+scoreboard players remove relay_dummy relay_cooldown 1
+scoreboard players operation relay_dummy relay_cd_d = relay_dummy relay_cooldown
+scoreboard players operation relay_dummy relay_cd_d *= relay_dummy relay_bar_splits
+scoreboard players operation relay_dummy relay_cd_d /= relay_dummy relay_cd_initial
+scoreboard players operation relay_dummy relay_cd_stage = relay_dummy relay_cd_d
+
 execute if score relay_dummy relay_cd_stage matches 0 run bossbar set relay:timebar value 0
 execute if score relay_dummy relay_cd_stage matches 1 run bossbar set relay:timebar value 1
 execute if score relay_dummy relay_cd_stage matches 2 run bossbar set relay:timebar value 2
