@@ -1,2 +1,3 @@
 function relay:scoreboardcreate
 function relay:kill_dummy
+function relay:settings/default

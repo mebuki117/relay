@@ -9,8 +9,8 @@ execute as @a run tellraw @s {"text":"[Relay][Info] Relay Players: ","extra":[{"
 execute as @a run tellraw @s {"text":"[Relay][Info] Your relay number is ","extra":[{"score":{"name":"@s","objective":"relay_number"}}]}
 
 function relay:scoreboardcreate
-function relay:settings
-function relay:bossbarcreate
+function relay:settings/required
+function relay:bossbar/create
 function relay:main
 function relay:tick
 
