@@ -12,3 +12,5 @@ scoreboard objectives add relay_cd_initial dummy
 scoreboard objectives add relay_cd_stage dummy
 scoreboard objectives add relay_cd_d dummy
 scoreboard objectives add relay_bar_splits dummy
+
+scoreboard objectives add relay_with_timer dummy

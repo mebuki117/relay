@@ -1,0 +1,1 @@
+bossbar set relay:timebar value 0

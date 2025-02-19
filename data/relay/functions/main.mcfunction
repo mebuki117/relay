@@ -4,4 +4,4 @@ execute as @a if score relay_dummy relay_relaying = @s relay_number run function
 
 scoreboard players add relay_dummy relay_relaying 1
 
-# say [Relay][Debug] Running main function
+# execute as @a run tellraw @s {"text":"[Relay][Debug] Running main function"}

@@ -109,10 +109,10 @@ execute if score relay_dummy relay_relaying matches 0.. if score relay_dummy rel
 execute if score relay_dummy relay_relaying matches 0.. if score relay_dummy relay_cooldown matches 600 run function relay:notification/30s_left
 execute if score relay_dummy relay_relaying matches 0.. if score relay_dummy relay_cooldown matches 1200 run function relay:notification/1m_left
 
-execute if score relay_dummy relay_relaying matches 0.. run function relay:countdown_update
+execute if score relay_dummy relay_relaying matches 0.. run schedule function relay:countdown_update 1t
 
-execute if score relay_dummy relay_relaying = relay_dummy relay_max_p_d run function relay:reset
+execute if score relay_dummy relay_relaying = relay_dummy relay_max_p_d run schedule function relay:reset 1t
 
-execute if score relay_dummy relay_relaying matches 0.. if score relay_dummy relay_cd_stage matches 0 run function relay:main
+execute if score relay_dummy relay_relaying matches 0.. if score relay_dummy relay_cd_stage matches 0 run schedule function relay:main 1t
 
 execute if score relay_dummy relay_relaying matches 0.. run schedule function relay:tick 1t

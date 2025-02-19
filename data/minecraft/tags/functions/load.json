@@ -1,6 +1,3 @@
 {
-    "values": [
-        "original:scoreboardcreate",
-        "original:kill_dummy"
-    ]
+    "values": ["relay:load"]
 }

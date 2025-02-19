@@ -1,0 +1,2 @@
+function relay:scoreboardcreate
+function relay:kill_dummy

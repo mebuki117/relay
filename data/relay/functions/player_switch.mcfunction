@@ -7,4 +7,4 @@ execute as @a at @s if score relay_dummy relay_A = @s relay_number run gamemode 
 
 kill @e[type=armor_stand,tag=pass_item]
 
-schedule function relay:item/cage_destroy 1s append
+schedule function relay:item/cage_destroy 1s
