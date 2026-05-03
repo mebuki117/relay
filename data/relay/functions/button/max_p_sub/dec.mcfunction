@@ -1,0 +1,2 @@
+execute as @s if score relay_dummy relay_max_p matches 2.. run scoreboard players remove relay_dummy relay_max_p 1
+execute as @s if score relay_dummy relay_max_p matches 2.. run tellraw @s {"text":"Set max players: ","extra":[{"score":{"name":"relay_dummy","objective":"relay_max_p"}}]}

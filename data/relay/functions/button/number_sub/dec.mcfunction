@@ -1,0 +1,2 @@
+execute as @s if score @s relay_number matches 2.. run scoreboard players remove @s relay_number 1
+execute as @s if score @s relay_number matches 2.. run tellraw @s {"text":"Set relay number: ","extra":[{"score":{"name":"@s","objective":"relay_number"}}]}

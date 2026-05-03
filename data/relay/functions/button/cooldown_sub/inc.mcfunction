@@ -1,0 +1,2 @@
+execute as @s run scoreboard players add relay_dummy relay_cd_initial 200
+execute as @s run tellraw @s [{"text":"Set player switch cooldown: "},{"score":{"name":"relay_dummy","objective":"relay_cd_initial"}},{"text":" tick"}]

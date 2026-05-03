@@ -6,3 +6,5 @@ scoreboard players set relay_dummy relay_cd_d 0
 scoreboard players set relay_dummy relay_bar_splits 100
 
 scoreboard players set relay_dummy relay_max_p_d_1 1
+
+# scoreboard players set relay_dummy relay_20 20

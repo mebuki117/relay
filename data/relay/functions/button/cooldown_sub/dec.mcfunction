@@ -1,0 +1,2 @@
+execute as @s if score relay_dummy relay_cd_initial matches 201.. run scoreboard players remove relay_dummy relay_cd_initial 200
+execute as @s if score relay_dummy relay_cd_initial matches 201.. run tellraw @s [{"text":"Set player switch cooldown: "},{"score":{"name":"relay_dummy","objective":"relay_cd_initial"}},{"text":" tick"}]

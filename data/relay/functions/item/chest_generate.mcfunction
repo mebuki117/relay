@@ -1,5 +1,10 @@
 execute as @s at @s run fill ~-1 252 ~-1 ~1 255 ~1 minecraft:barrier replace minecraft:air
 
+setblock ~ 253 ~1 minecraft:dispenser[facing=north]{Items:[{Slot:0,id:"light_gray_stained_glass_pane",Count:1}]}
+setblock ~ 253 ~-1 minecraft:dispenser[facing=south]{Items:[{Slot:0,id:"light_gray_stained_glass_pane",Count:1}]}
+setblock ~1 253 ~ minecraft:dispenser[facing=west]{Items:[{Slot:0,id:"light_gray_stained_glass_pane",Count:1}]}
+setblock ~-1 253 ~ minecraft:dispenser[facing=east]{Items:[{Slot:0,id:"light_gray_stained_glass_pane",Count:1}]}
+
 execute as @s at @s run setblock ~ 253 ~ minecraft:chest{Items:[{Slot:0,id:"light_gray_stained_glass_pane",Count:1},{Slot:1,id:"light_gray_stained_glass_pane",Count:1},{Slot:2,id:"light_gray_stained_glass_pane",Count:1},{Slot:3,id:"light_gray_stained_glass_pane",Count:1},{Slot:4,id:"light_gray_stained_glass_pane",Count:1},{Slot:5,id:"light_gray_stained_glass_pane",Count:1},{Slot:6,id:"light_gray_stained_glass_pane",Count:1},{Slot:7,id:"light_gray_stained_glass_pane",Count:1},{Slot:8,id:"light_gray_stained_glass_pane",Count:1},{Slot:9,id:"light_gray_stained_glass_pane",Count:1},{Slot:10,id:"light_gray_stained_glass_pane",Count:1},{Slot:11,id:"light_gray_stained_glass_pane",Count:1},{Slot:12,id:"light_gray_stained_glass_pane",Count:1},{Slot:13,id:"light_gray_stained_glass_pane",Count:1},{Slot:14,id:"light_gray_stained_glass_pane",Count:1},{Slot:15,id:"light_gray_stained_glass_pane",Count:1},{Slot:16,id:"light_gray_stained_glass_pane",Count:1},{Slot:17,id:"light_gray_stained_glass_pane",Count:1},{Slot:18,id:"light_gray_stained_glass_pane",Count:1},{Slot:19,id:"light_gray_stained_glass_pane",Count:1},{Slot:20,id:"light_gray_stained_glass_pane",Count:1},{Slot:21,id:"light_gray_stained_glass_pane",Count:1},{Slot:22,id:"light_gray_stained_glass_pane",Count:1},{Slot:23,id:"light_gray_stained_glass_pane",Count:1},{Slot:24,id:"light_gray_stained_glass_pane",Count:1},{Slot:25,id:"light_gray_stained_glass_pane",Count:1},{Slot:26,id:"light_gray_stained_glass_pane",Count:1}]}
 execute as @s at @s run setblock ~ 254 ~ minecraft:chest{Items:[{Slot:0,id:"light_gray_stained_glass_pane",Count:1},{Slot:1,id:"light_gray_stained_glass_pane",Count:1},{Slot:2,id:"light_gray_stained_glass_pane",Count:1},{Slot:3,id:"light_gray_stained_glass_pane",Count:1},{Slot:4,id:"light_gray_stained_glass_pane",Count:1},{Slot:5,id:"light_gray_stained_glass_pane",Count:1},{Slot:6,id:"light_gray_stained_glass_pane",Count:1},{Slot:7,id:"light_gray_stained_glass_pane",Count:1},{Slot:8,id:"light_gray_stained_glass_pane",Count:1},{Slot:9,id:"light_gray_stained_glass_pane",Count:1},{Slot:10,id:"light_gray_stained_glass_pane",Count:1},{Slot:11,id:"light_gray_stained_glass_pane",Count:1},{Slot:12,id:"light_gray_stained_glass_pane",Count:1},{Slot:13,id:"light_gray_stained_glass_pane",Count:1},{Slot:14,id:"light_gray_stained_glass_pane",Count:1},{Slot:15,id:"light_gray_stained_glass_pane",Count:1},{Slot:16,id:"light_gray_stained_glass_pane",Count:1},{Slot:17,id:"light_gray_stained_glass_pane",Count:1},{Slot:18,id:"light_gray_stained_glass_pane",Count:1},{Slot:19,id:"light_gray_stained_glass_pane",Count:1},{Slot:20,id:"light_gray_stained_glass_pane",Count:1},{Slot:21,id:"light_gray_stained_glass_pane",Count:1},{Slot:22,id:"light_gray_stained_glass_pane",Count:1},{Slot:23,id:"light_gray_stained_glass_pane",Count:1},{Slot:24,id:"light_gray_stained_glass_pane",Count:1},{Slot:25,id:"light_gray_stained_glass_pane",Count:1},{Slot:26,id:"light_gray_stained_glass_pane",Count:1}]}
 
@@ -85,6 +90,7 @@ execute as @s run data modify storage relay_temp:inventory item36 set from entit
 execute as @s run data modify storage relay_temp:inventory item37 set from entity @s Inventory[37]
 execute as @s run data modify storage relay_temp:inventory item38 set from entity @s Inventory[38]
 execute as @s run data modify storage relay_temp:inventory item39 set from entity @s Inventory[39]
+execute as @s run data modify storage relay_temp:inventory item40 set from entity @s Inventory[40]
 
 execute as @s run data modify storage relay_temp:inventory item0.Slot set value 0b
 execute as @s run data modify storage relay_temp:inventory item1.Slot set value 1b
@@ -122,11 +128,11 @@ execute as @s run data modify storage relay_temp:inventory item32.Slot set value
 execute as @s run data modify storage relay_temp:inventory item33.Slot set value 6b
 execute as @s run data modify storage relay_temp:inventory item34.Slot set value 7b
 execute as @s run data modify storage relay_temp:inventory item35.Slot set value 8b
-execute as @s run data modify storage relay_temp:inventory item36.Slot set value 9b
-execute as @s run data modify storage relay_temp:inventory item37.Slot set value 10b
-execute as @s run data modify storage relay_temp:inventory item38.Slot set value 11b
-execute as @s run data modify storage relay_temp:inventory item39.Slot set value 12b
-execute as @s run data modify storage relay_temp:inventory item40.Slot set value 13b
+execute as @s run data modify storage relay_temp:inventory item36.Slot set value 0b
+execute as @s run data modify storage relay_temp:inventory item37.Slot set value 0b
+execute as @s run data modify storage relay_temp:inventory item38.Slot set value 0b
+execute as @s run data modify storage relay_temp:inventory item39.Slot set value 0b
+execute as @s run data modify storage relay_temp:inventory item40.Slot set value 9b
 
 execute as @s at @s run data modify block ~ 253 ~ Items[0] set from storage relay_temp:inventory item0
 execute as @s at @s run data modify block ~ 253 ~ Items[1] set from storage relay_temp:inventory item1
@@ -164,8 +170,10 @@ execute as @s at @s run data modify block ~ 254 ~ Items[5] set from storage rela
 execute as @s at @s run data modify block ~ 254 ~ Items[6] set from storage relay_temp:inventory item33
 execute as @s at @s run data modify block ~ 254 ~ Items[7] set from storage relay_temp:inventory item34
 execute as @s at @s run data modify block ~ 254 ~ Items[8] set from storage relay_temp:inventory item35
-execute as @s at @s run data modify block ~ 254 ~ Items[9] set from storage relay_temp:inventory item36
-execute as @s at @s run data modify block ~ 254 ~ Items[10] set from storage relay_temp:inventory item37
-execute as @s at @s run data modify block ~ 254 ~ Items[11] set from storage relay_temp:inventory item38
-execute as @s at @s run data modify block ~ 254 ~ Items[12] set from storage relay_temp:inventory item39
-execute as @s at @s run data modify block ~ 254 ~ Items[13] set from storage relay_temp:inventory item40
+execute as @s at @s run data modify block ~ 253 ~1 Items[0] set from storage relay_temp:inventory item36
+execute as @s at @s run data modify block ~ 253 ~-1 Items[0] set from storage relay_temp:inventory item37
+execute as @s at @s run data modify block ~1 253 ~ Items[0] set from storage relay_temp:inventory item38
+execute as @s at @s run data modify block ~-1 253 ~ Items[0] set from storage relay_temp:inventory item39
+execute as @s at @s run data modify block ~ 254 ~ Items[9] set from storage relay_temp:inventory item40
+
+execute as @s run clear @s minecraft:barrier
