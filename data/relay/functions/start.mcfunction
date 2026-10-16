@@ -1,5 +1,7 @@
 function relay:settings/required
 
+scoreboard players set relay_dummy relay_with_timer 0
+
 scoreboard players set relay_dummy relay_relaying 0
 scoreboard players set relay_dummy relay_A 0
 scoreboard players set relay_dummy relay_B 1

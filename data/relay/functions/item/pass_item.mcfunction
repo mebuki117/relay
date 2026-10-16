@@ -5,6 +5,7 @@ execute as @s at @s run summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,Invulne
 execute as @s at @s run tp @e[type=armor_stand,tag=pass_item,limit=1] @s
 execute as @s at @s run give @s minecraft:barrier 2304
 execute as @s at @s run kill @e[distance=..20,type=item,nbt={Item:{id:"minecraft:barrier"}}]
+execute as @s run gamemode spectator
 execute as @s at @s run function relay:item/chest_generate
 
 # execute as @s at @s store result score @s relay_duration run data get entity @s ActiveEffects[0].Duration
