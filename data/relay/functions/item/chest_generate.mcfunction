@@ -86,11 +86,11 @@ execute as @s run data modify storage relay_temp:inventory item32 set from entit
 execute as @s run data modify storage relay_temp:inventory item33 set from entity @s Inventory[33]
 execute as @s run data modify storage relay_temp:inventory item34 set from entity @s Inventory[34]
 execute as @s run data modify storage relay_temp:inventory item35 set from entity @s Inventory[35]
-execute as @s run data modify storage relay_temp:inventory item36 set from entity @s Inventory[36]
-execute as @s run data modify storage relay_temp:inventory item37 set from entity @s Inventory[37]
-execute as @s run data modify storage relay_temp:inventory item38 set from entity @s Inventory[38]
-execute as @s run data modify storage relay_temp:inventory item39 set from entity @s Inventory[39]
-execute as @s run data modify storage relay_temp:inventory item40 set from entity @s Inventory[40]
+execute as @s run data modify storage relay_temp:inventory item36 set from entity @s Inventory[{Slot:100b}]
+execute as @s run data modify storage relay_temp:inventory item37 set from entity @s Inventory[{Slot:101b}]
+execute as @s run data modify storage relay_temp:inventory item38 set from entity @s Inventory[{Slot:102b}]
+execute as @s run data modify storage relay_temp:inventory item39 set from entity @s Inventory[{Slot:103b}]
+execute as @s run data modify storage relay_temp:inventory item40 set from entity @s Inventory[{Slot:-106b}]
 
 execute as @s run data modify storage relay_temp:inventory item0.Slot set value 0b
 execute as @s run data modify storage relay_temp:inventory item1.Slot set value 1b

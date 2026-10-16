@@ -15,6 +15,10 @@ scoreboard objectives add relay_bar_splits dummy
 
 scoreboard objectives add relay_with_timer dummy
 
+scoreboard objectives add relay_temp dummy
+
+scoreboard objectives add relay_loop dummy
+
 # scoreboard objectives add relay_duration dummy
 # scoreboard objectives add relay_amplifier dummy
 # scoreboard objectives add relay_20 dummy

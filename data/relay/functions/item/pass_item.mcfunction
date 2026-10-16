@@ -11,11 +11,10 @@ execute as @s at @s run function relay:item/chest_generate
 # execute as @s at @s store result score @s relay_amplifier run data get entity @s ActiveEffects[0].Amplifier
 # scoreboard players operation relay_dummy relay_duration /= relay_dummy relay_20
 
-execute as @a at @s if score relay_dummy relay_A = @s relay_number run execute as @a if score relay_dummy relay_B = @s relay_number run gamemode creative @s
+execute as @a at @s if score relay_dummy relay_A = @s relay_number run execute as @a if score relay_dummy relay_B = @s relay_number run gamemode adventure @s
 execute as @a at @s if score relay_dummy relay_A = @s relay_number run execute as @a if score relay_dummy relay_B = @s relay_number run tp @s ~ 253 ~
 execute as @a at @s if score relay_dummy relay_A = @s relay_number run execute as @a if score relay_dummy relay_B = @s relay_number run clear @s
 execute as @s at @s run function relay:item/chest_destroy
 execute as @s at @s run function relay:item/launch_dispenser
-
 
 schedule function relay:player_switch 1s

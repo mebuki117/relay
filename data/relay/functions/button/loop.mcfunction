@@ -1,0 +1,1 @@
+execute as @s run tellraw @s [{"text":"Select Loop Mode: "},{"text":"[Enable]","color":"green","clickEvent":{"action":"run_command","value":"/function relay:button/loop/enable"}},{"text":" "},{"text":"[Disable]","color":"red","clickEvent":{"action":"run_command","value":"/function relay:button/loop/disable"}}]
