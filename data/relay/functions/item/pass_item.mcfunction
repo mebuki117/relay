@@ -15,6 +15,7 @@ execute as @s at @s run function relay:item/chest_generate
 execute as @a at @s if score relay_dummy relay_A = @s relay_number run execute as @a if score relay_dummy relay_B = @s relay_number run gamemode adventure @s
 execute as @a at @s if score relay_dummy relay_A = @s relay_number run execute as @a if score relay_dummy relay_B = @s relay_number run tp @s ~ 253 ~
 execute as @a at @s if score relay_dummy relay_A = @s relay_number run execute as @a if score relay_dummy relay_B = @s relay_number run clear @s
+execute as @a at @s if score relay_dummy relay_A = @s relay_number run execute as @a if score relay_dummy relay_B = @s relay_number run effect clear
 execute as @s at @s run function relay:item/chest_destroy
 execute as @s at @s run function relay:item/launch_dispenser
 
