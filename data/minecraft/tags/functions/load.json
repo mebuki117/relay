@@ -1,3 +1,6 @@
 {
-	"values": ["hmy_mst:load"]
+	"values": [
+		"relay:load",
+		"hmy_mst:load"
+	]
 }

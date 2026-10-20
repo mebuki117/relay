@@ -16,4 +16,10 @@ function relay:bossbar/create
 function relay:main
 function relay:tick
 
+gamerule doDaylightCycle true
+gamerule doWeatherCycle true
+
+time set 0
+weather clear
+
 playsound minecraft:entity.ender_dragon.growl hostile @a
