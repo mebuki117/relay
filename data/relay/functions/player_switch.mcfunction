@@ -5,8 +5,8 @@ execute as @a at @s if score relay_dummy relay_B = @s relay_number run tp @s @e[
 execute as @a at @s if score relay_dummy relay_B = @s relay_number run clear @s minecraft:chest 2
 execute as @a at @s if score relay_dummy relay_B = @s relay_number run clear @s minecraft:light_gray_stained_glass_pane
 execute as @a at @s if score relay_dummy relay_B = @s relay_number run clear @s minecraft:barrier 2304
-execute as @a at @s if score relay_dummy relay_A = @s relay_number run effect give @s minecraft:regeneration 2 255
-execute as @a at @s if score relay_dummy relay_A = @s relay_number run effect give @s minecraft:saturation 2 255
+# execute as @a at @s if score relay_dummy relay_A = @s relay_number run effect give @s minecraft:regeneration 2 255
+# execute as @a at @s if score relay_dummy relay_A = @s relay_number run effect give @s minecraft:saturation 2 255
 execute as @a at @s if score relay_dummy relay_A = @s relay_number if score relay_dummy relay_loop matches 1.. run scoreboard players operation @s relay_number += relay_dummy relay_max_p
 
 kill @e[type=armor_stand,tag=pass_item]
